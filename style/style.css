@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    border: none;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    background-image: url(../img/bg.png);
+    font-family: 'Lato', sans-serif;
+    cursor: default;
+}
+
+/* Utility Classes */
+
+section{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.container{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h4{
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: gold;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease-in;
+}
+
+.container h1{
+    color: white;
+    font-size: 5rem;
+    margin: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.container h2{
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-top: 30px;
+    color: gray;
+    transition: opacity 0.2s ease-in;
+}
+
+.img{
+    width: 30%;
+    height: 50%;
+    transition: transform 0.5s ease-in;
+}
+
+i{
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 10px 5px;
+}
+
+button:active{
+    background-color: gold;
+}
+
+button:hover{
+    background-color: gold;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+/* Header */
+header{
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    background: inherit;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+
+header .container{
+    width: 100%;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 5px 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container h2{
+    transition: opacity 0.8s ease-in;
+    font-size: 2.3rem;
+    opacity: 0;
+}
+
+header h2:hover, header h2.selected{
+    color:gold;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: end;
+    margin-left: 10px;
+}
+
+header nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 15px;
+    color: gray;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+    opacity: 0;
+}
+
+header nav ul li:hover, header nav ul li.selected{
+    color: gold;
+}
+
+/* Showcase */
+
+.showcase .img{
+    background: url(../img/showcase-img.svg) no-repeat;
+    transform: translateX(1000px);
+}
+
+.showcase h2{
+    opacity: 0;
+}
+.showcase h1{
+    opacity: 0;
+}
+.showcase h4{
+    opacity: 0;
+}
+
+/* About */
+.about{
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.about .img{
+    background: url(../img/about-img.svg) no-repeat center;
+    margin-bottom: 75px;
+}
+
+/* Team */
+.team{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team .container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.team .person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.team i{
+    font-size: 150px;
+}
+
+.team h1{
+    font-size: 5rem;
+    color: gold;
+}
+
+.team h2{
+    font-size: 1.3rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.team h3{
+    color: white;
+}
+
+/* Reports */
+
+.reports{
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+.reports .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.reports .report{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    height: 200px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 10px 5px;
+}
+
+.reports i{
+    font-size: 100px;
+}
+
+.reports h1{
+    font-size: 5rem;
+    color: gold;
+}
+
+.reports h2{
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+
+.reports .report:active{
+    background-color: gold;
+}
+
+.reports .report:hover{
+    background-color: gold;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+@media screen and (max-width:1000px){
+    body{
+        opacity: 0;
+    }
+}
