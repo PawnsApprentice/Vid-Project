@@ -79,6 +79,17 @@ function navbarScroll(){
     headerH2.classList.add('selected')
 }
 
+function openTab()
+{
+    window.open("projectreport.pdf",'_blank');
+}
+
+
+
+
+
+
+
 /*window.addEventListener('scroll',showWhenScrolled)/*
 /*
 function showWhenScrolled(){
