@@ -1,94 +1,225 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/style.css">
-    <title>Rental Car System</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h2 class="selected">Rental Car System</h2>
-            <nav>
-                <ul>
-                    <li>About Rental Car System</li>
-                    <li>The Team</li>
-                    <li>Reports</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <section class="showcase">
-        <div class="container">
-            <h4>A rental web application</h4>
-           
-        </div>
-        <div class="img"></div>
-    </section>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+      function firstVideo() {
+        var vid = document.getElementById("video1");
+        var col = document.getElementById("firstColumn");
+        vid.style.display = "block";
 
-    <section class="about">
-        <div class="container">
-            <h4>CS353 Group 4 Project</h4>
-        </div>
-        <div class="img"></div>
-    </section>
+        vid.requestFullscreen();
+        vid.play();
+      }
 
-    <section class="team">
-        <h1>Team Members</h1>
-        <div class="container">
-            <button class="person anil">
-                <i class="fas fa-user-alt"></i>
-                <h2>Ege</h2>
-            </button>
-            <button class="person mete">
-                <i class="fas fa-user-alt"></i>
-                <h2>Denizhan</h2>
-            </button>
-            <button class="person rola">
-                <i class="fas fa-user-alt"></i>
-                <h2>Baykam</h2>
-            </button>
-            <button class="person hassam">
-                <i class="fas fa-user-alt"></i>
-                <h2>Hassam Abdullah</h2>
-            </button>
-        </div>
-        
-    
+      function exitFirstVideo() {
+        var vid = document.getElementById("video1");
+        console.log("video has finished");
+        vid.webkitExitFullscreen();
+        vid.style.display = "none";
+      }
+      function exitOnClickFirstVideo() {
+        var vid = document.getElementById("video1");
+        console.log("video has been clicked");
 
-    <section class="reports">
-        <h1>Project Reports</h1>
-        <div class="container">
-            <button class="project analysis" onclick="openTab()">
-                <i class="fas fa-tasks"></i>
-                <h2>Project Analysis</h2>
-            </button>
-            <button class="report anal">
-                <i class="fas fa-flask"></i>
-                <h2></h2>
-            </button>
-            <button class="report high">
-                <i class="fas fa-briefcase"></i>
-                <h2></h2>
-            </button>
-            <button class="report low">
-                <i class="fas fa-cogs"></i>
-                <h2></h2>
-            </button>
-            <button class="report final">
-                <i class="fas fa-clipboard-check"></i>
-                <h2></h2>
-            </button>
-        </div>
-    </section>
+        vid.webkitExitFullscreen();
+        vid.currentTime = 0;
+        vid.pause();
 
-    <script src="/script/script.js"></script>
-    <script src="script/script.js"></script
-</body>
+        vid.style.display = "none";
+        console.log(vid.style.display);
+      }
+      function secondVideo() {
+        var vid = document.getElementById("video2");
+        var col = document.getElementById("firstColumn");
+        vid.style.display = "block";
+
+        vid.requestFullscreen();
+        vid.play();
+      }
+
+      function exitSecondVideo() {
+        var vid = document.getElementById("video2");
+        console.log("video has finished");
+        vid.webkitExitFullscreen();
+        vid.style.display = "none";
+      }
+      function exitOnClickSecondVideo() {
+        var vid = document.getElementById("video2");
+        console.log("video has been clicked");
+
+        vid.webkitExitFullscreen();
+        vid.pause();
+        vid.currentTime = 0;
+        vid.style.display = "none";
+        console.log(vid.style.display);
+      }
+      function thirdVideo() {
+        var vid = document.getElementById("video3");
+        var col = document.getElementById("firstColumn");
+        vid.style.display = "block";
+
+        vid.requestFullscreen();
+        vid.play();
+      }
+
+      function exitThirdVideo() {
+        var vid = document.getElementById("video3");
+        console.log("video has finished");
+        vid.webkitExitFullscreen();
+        vid.style.display = "none";
+      }
+      function exitOnClickThirdVideo() {
+        var vid = document.getElementById("video3");
+        console.log("video has been clicked");
+
+        vid.webkitExitFullscreen();
+        vid.pause();
+        vid.currentTime = 0;
+        vid.style.display = "none";
+        console.log(vid.style.display);
+      }
+      function fourthVideo() {
+        var vid = document.getElementById("video4");
+        var col = document.getElementById("firstColumn");
+        vid.style.display = "block";
+
+        vid.requestFullscreen();
+        vid.play();
+      }
+
+      function exitFourthVideo() {
+        var vid = document.getElementById("video4");
+        console.log("video has finished");
+        vid.webkitExitFullscreen();
+        vid.style.display = "none";
+      }
+      function exitOnClickFourthVideo() {
+        var vid = document.getElementById("video4");
+        console.log("video has been clicked");
+
+        vid.webkitExitFullscreen();
+        vid.pause();
+        vid.currentTime = 0;
+        vid.style.display = "none";
+        console.log(vid.style.display);
+      }
+    </script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-flex myContainer">
+      <div class="row row-flex" style="height: 50vh">
+        <div
+          id="firstColumn"
+          class="col"
+          style="height: 50vh"
+          onclick="firstVideo()"
+        >
+          <video
+            id="video1"
+            width="100%"
+            height="100%"
+            autoplay
+            style="object-fit: cover; display: none"
+            controls
+            onended="exitFirstVideo()"
+            onpause="exitFirstVideo()"
+            onclick="exitOnClickFirstVideo()"
+          >
+            <source src="video1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          id="firstColumn"
+          class="col"
+          style="height: 50vh"
+          onclick="secondVideo()"
+        >
+          <video
+            id="video2"
+            width="100%"
+            height="100%"
+            autoplay
+            style="object-fit: cover; display: none"
+            controls
+            onended="exitSecondVideo()"
+            onpause="exitSecondVideo()"
+            onclick="exitOnClickSecondVideo()"
+          >
+            <source src="video3.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div
+          id="firstColumn"
+          class="col"
+          style="height: 50vh"
+          onclick="thirdVideo()"
+        >
+          <video
+            id="video3"
+            width="100%"
+            height="100%"
+            autoplay
+            style="object-fit: cover; display: none"
+            controls
+            onended="exitThirdVideo()"
+            onpause="exitThirdVideo()"
+            onclick="exitOnClickThirdVideo()"
+          >
+            <source src="video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="row row-flex" style="height: 50vh">
+        <div class="col"></div>
+        <div
+          id="firstColumn"
+          class="col"
+          style="height: 50vh"
+          onclick="fourthVideo()"
+        >
+          <video
+            id="video4"
+            width="100%"
+            height="100%"
+            autoplay
+            style="object-fit: cover; display: none"
+            controls
+            onended="exitFourthVideo()"
+            onpause="exitFourthVideo()"
+            onclick="exitOnClickFourthVideo()"
+          >
+            <source src="video4.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
